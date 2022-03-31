@@ -353,3 +353,10 @@ Once we've obtained a site we can begin to look at the raw data within the datas
 ```{r downloadData}
 mySites <- get_downloads(brazil_datasets)
 ```
+To retrieve the complete underlying data use the `samples()` function:
+
+```{r downloadData}
+Amarete_site <- samples(mySites[[1]])
+```
+The `samples()` function is under active development and may return an error for some sites.
+
